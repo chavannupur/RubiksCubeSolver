@@ -55,11 +55,35 @@ build CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj: CXX_COMPILER__RubiksCubeSolv
   OBJECT_DIR = CMakeFiles\RubiksCubeSolver.dir
   OBJECT_FILE_DIR = CMakeFiles\RubiksCubeSolver.dir
 
-build CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj: CXX_COMPILER__RubiksCubeSolver_unscanned_Debug C$:/Users/HP/CLionProjects/RubiksCubeSolver/RubiksCube.cpp || cmake_object_order_depends_target_RubiksCubeSolver
-  DEP_FILE = CMakeFiles\RubiksCubeSolver.dir\RubiksCube.cpp.obj.d
+build CMakeFiles/RubiksCubeSolver.dir/Model/RubiksCube.cpp.obj: CXX_COMPILER__RubiksCubeSolver_unscanned_Debug C$:/Users/HP/CLionProjects/RubiksCubeSolver/Model/RubiksCube.cpp || cmake_object_order_depends_target_RubiksCubeSolver
+  DEP_FILE = CMakeFiles\RubiksCubeSolver.dir\Model\RubiksCube.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\RubiksCubeSolver.dir
-  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeSolver.dir\Model
+
+build CMakeFiles/RubiksCubeSolver.dir/Model/RubiksCube3dArray.cpp.obj: CXX_COMPILER__RubiksCubeSolver_unscanned_Debug C$:/Users/HP/CLionProjects/RubiksCubeSolver/Model/RubiksCube3dArray.cpp || cmake_object_order_depends_target_RubiksCubeSolver
+  DEP_FILE = CMakeFiles\RubiksCubeSolver.dir\Model\RubiksCube3dArray.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubiksCubeSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeSolver.dir\Model
+
+build CMakeFiles/RubiksCubeSolver.dir/Solver/BFSSolver.cpp.obj: CXX_COMPILER__RubiksCubeSolver_unscanned_Debug C$:/Users/HP/CLionProjects/RubiksCubeSolver/Solver/BFSSolver.cpp || cmake_object_order_depends_target_RubiksCubeSolver
+  DEP_FILE = CMakeFiles\RubiksCubeSolver.dir\Solver\BFSSolver.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubiksCubeSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeSolver.dir\Solver
+
+build CMakeFiles/RubiksCubeSolver.dir/Solver/DFSSolver.cpp.obj: CXX_COMPILER__RubiksCubeSolver_unscanned_Debug C$:/Users/HP/CLionProjects/RubiksCubeSolver/Solver/DFSSolver.cpp || cmake_object_order_depends_target_RubiksCubeSolver
+  DEP_FILE = CMakeFiles\RubiksCubeSolver.dir\Solver\DFSSolver.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubiksCubeSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeSolver.dir\Solver
+
+build CMakeFiles/RubiksCubeSolver.dir/Solver/IDDFSSolver.h.cpp.obj: CXX_COMPILER__RubiksCubeSolver_unscanned_Debug C$:/Users/HP/CLionProjects/RubiksCubeSolver/Solver/IDDFSSolver.h.cpp || cmake_object_order_depends_target_RubiksCubeSolver
+  DEP_FILE = CMakeFiles\RubiksCubeSolver.dir\Solver\IDDFSSolver.h.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubiksCubeSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubiksCubeSolver.dir\Solver
 
 
 # =============================================================================
@@ -69,7 +93,7 @@ build CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj: CXX_COMPILER__RubiksCu
 #############################################
 # Link the executable RubiksCubeSolver.exe
 
-build RubiksCubeSolver.exe: CXX_EXECUTABLE_LINKER__RubiksCubeSolver_Debug CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj
+build RubiksCubeSolver.exe: CXX_EXECUTABLE_LINKER__RubiksCubeSolver_Debug CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj CMakeFiles/RubiksCubeSolver.dir/Model/RubiksCube.cpp.obj CMakeFiles/RubiksCubeSolver.dir/Model/RubiksCube3dArray.cpp.obj CMakeFiles/RubiksCubeSolver.dir/Solver/BFSSolver.cpp.obj CMakeFiles/RubiksCubeSolver.dir/Solver/DFSSolver.cpp.obj CMakeFiles/RubiksCubeSolver.dir/Solver/IDDFSSolver.h.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RubiksCubeSolver.dir
