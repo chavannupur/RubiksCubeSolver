@@ -22,14 +22,14 @@ int main() {
 //
     // cube.l();
     // cube.print();
-    // RubiksCube3dArray cube;
-    // vector<RubiksCube::MOVE> shuffle = cube.randomShuffleCube(6);
-    // for(auto it: shuffle) {
-    //     cout<<cube.getMove(it)<<" ";
-    // }
-    // cout<<"\n";
-    // cube.print();
-    //
+    RubiksCube3dArray cube;
+    vector<RubiksCube::MOVE> shuffle = cube.randomShuffleCube(8);
+    for(auto it: shuffle) {
+        cout<<cube.getMove(it)<<" ";
+    }
+    cout<<"\n";
+    cube.print();
+
     // BFSSolver<RubiksCube3dArray, Hash3d> bfs_solver(cube);
     // vector<RubiksCube3dArray::MOVE> steps = bfs_solver.solve();
     // for(auto it : steps) {
@@ -37,6 +37,13 @@ int main() {
     // }
     // cout<<"\n";
     // bfs_solver.rubiksCube.print();
+    IDDFSSolver<RubiksCube3dArray, Hash3d> iddfs(cube, 8);
+    vector<RubiksCube3dArray::MOVE> steps = iddfs.solve();
+    for(auto it : steps) {
+        cout<<cube.getMove(it)<<" ";
+    }
+    cout<<"\n";
+    iddfs.rubiksCube.print();
 
     // Create two Cubes ------------------------------------------------------------------------------------------
 
